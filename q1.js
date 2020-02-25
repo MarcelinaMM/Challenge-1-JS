@@ -29,15 +29,15 @@ let sortedArray = [];
 
 const sortArray = (input) => {
 
-let strArray = input.filter(el => {
-    return typeof el === "string";
-    }).sort();
-let numArray = input.filter(el => {
-    return typeof el === "number";
-}).sort((a,b) => a - b);
+    let strArray = input.filter(el => {
+        return typeof el === "string";
+        }).sort();
+    let numArray = input.filter(el => {
+        return typeof el === "number";
+    }).sort((a,b) => a - b);
 
-sortedArray = [strArray, numArray];
-return sortedArray;
+    sortedArray = [strArray, numArray];
+    return sortedArray;
 };
 
 sortArray(input);
