@@ -1,11 +1,11 @@
 let pairs = [];
 let pairTemp = [];
 
-const answer = ((augendArray, sum) =>{
-    for(i = 0; i < augendArray.length; i++){
-        for(j = i+1; j < augendArray.length; j++){
-            if(augendArray[i] + augendArray[j] === sum){
-                pairTemp = [augendArray[i], augendArray[j]];
+const answer = ((augendsArray, sum) =>{
+    for(i = 0; i < augendsArray.length; i++){
+        for(j = i+1; j < augendsArray.length; j++){
+            if(augendsArray[i] + augendsArray[j] === sum){
+                pairTemp = [augendsArray[i], augendsArray[j]];
                 pairs.push(pairTemp);
                 pairTemp = [];
             };
